@@ -2355,3 +2355,39 @@ footer{
 .header-nav{
   transition:.3s ease;
 }
+/* ================= MOBILE CONTACT ORDER FIX ================= */
+
+@media(max-width:900px){
+
+  /* main contact layout stack */
+  .home-contact-preview{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+  }
+
+  /* ORDER FIX */
+  .contact-preview-text{
+    order:1;
+    margin:0 auto;
+  }
+
+  .contact-preview-image{
+    order:2;                 /* 🔥 image niche aa jayegi */
+    margin:0 auto;
+  }
+
+  .contact-info{
+    order:3;                 /* 🔥 3 blocks sabse niche */
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    align-items:center;
+  }
+
+  .contact-info-item{
+    width:100%;
+    text-align:center;
+  }
+}
+
