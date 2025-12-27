@@ -2269,4 +2269,63 @@ footer{
   color:#b11212;
   font-weight:600;
 }
+/* ================= RESPONSIVE HEADER ================= */
+
+/* hamburger hidden on desktop */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  width:24px;
+  height:2.5px;
+  background:#2e2e2e;
+}
+
+/* MOBILE VIEW */
+@media(max-width:900px){
+
+  .main-header{
+    padding:0 20px;
+  }
+
+  /* hide nav by default */
+  .header-nav{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fbf4ea;
+    flex-direction:column;
+    align-items:center;
+    gap:22px;
+    padding:30px 0;
+    display:none;
+    border-bottom:1px solid #e6d6c2;
+  }
+
+  .header-nav.active{
+    display:flex;
+  }
+
+  /* show hamburger */
+  .menu-toggle{
+    display:flex;
+  }
+
+  /* order button stays right */
+  .order-btn{
+    padding:12px 26px;
+    font-size:14px;
+  }
+}
+@media(max-width:900px){
+  footer{
+    text-align:center;
+    padding:40px 20px;
+  }
+}
 
