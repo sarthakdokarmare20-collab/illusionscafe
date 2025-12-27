@@ -2328,6 +2328,7 @@ footer{
     padding:40px 20px;
   }
 }
+
 /* ================= MOBILE ORDER BUTTON FIX ================= */
 
 @media(max-width:900px){
@@ -2351,5 +2352,6 @@ footer{
     gap:10px;
   }
 }
-
-
+.header-nav{
+  transition:.3s ease;
+}
