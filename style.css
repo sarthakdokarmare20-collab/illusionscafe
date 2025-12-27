@@ -2328,4 +2328,28 @@ footer{
     padding:40px 20px;
   }
 }
+/* ================= MOBILE ORDER BUTTON FIX ================= */
+
+@media(max-width:900px){
+
+  /* order now button small on mobile */
+  .order-btn{
+    padding:10px 16px !important;
+    font-size:12px !important;
+    border-radius:30px !important;
+    box-shadow:0 8px 18px rgba(177,18,18,0.35);
+  }
+
+  /* zomato icon resize */
+  .order-btn img{
+    width:16px;
+    height:16px;
+  }
+
+  /* header spacing fix so hamburger is clickable */
+  .main-header{
+    gap:10px;
+  }
+}
+
 
