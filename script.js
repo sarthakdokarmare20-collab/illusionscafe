@@ -842,6 +842,9 @@ function animateHero(){
   });
 
 }
+function toggleMenu(){
+  document.querySelector(".header-nav").classList.toggle("active");
+}
 
 
 /* =================================================
