@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cafe Illusions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="main-header">
+
+  <!-- LEFT : LOGO -->
+  <div class="header-logo-text">
+  <span class="logo-cafe">Cafe</span>
+  <span class="logo-illusions">Illusions</span>
+</div>
+
+
+  <!-- RIGHT : NAV + BUTTON -->
+  <div class="header-right-wrap">
+
+    <nav class="header-nav">
+      <a onclick="openPage('home')">Home</a>
+      <a onclick="openPage('menu')">Menu</a>
+      <a onclick="openPage('about')">About</a>
+      <a onclick="openPage('franchise')">Franchise</a>
+      <a onclick="openPage('gallery')">Gallery</a>
+      <a onclick="openPage('reservation')">Reservation</a>
+      <a onclick="openPage('contact')">Contact</a>
+    </nav>
+
+    <a 
+  href="https://zomato.onelink.me/xqzv/uik4ac3j"
+  target="_blank"
+  class="zomato-btn"
+>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Zomato">
+  <span>Order Now</span>
+</a>
+
+
+  </div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+<!-- =========================
+     HOME PAGE
+========================= -->
+<section id="home" class="page">
+
+
+  <div class="home-hero">
+
+    <!-- LEFT CONTENT -->
+    <div class="home-hero-text">
+
+      <h1>
+        Where Every Sip Feels Like <br>
+        <span>An Illusion of Perfection</span>
+      </h1>
+
+      <p>
+        Step into a thoughtfully designed café experience where
+        handcrafted beverages, elegant interiors and comforting
+        flavours come together to create moments worth remembering.
+      </p>
+
+      <div class="home-hero-actions">
+        <button class="home-btn-primary" onclick="openPage('menu')">
+          Explore Menu
+        </button>
+
+        <button class="home-btn-outline" onclick="openPage('franchise')">
+          Franchise With Us
+        </button>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="home-hero-image">
+      <div class="hero-img-frame">
+        <img src="frontimage.jpg" alt="Illusion Café Interior">
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- ===== HOME → ABOUT CTA (FULL) ===== -->
+<div class="home-about-cta">
+
+  <span class="cta-eyebrow">OUR STORY</span>
+
+  <h3>
+    The Thought & Craft <br>
+    Behind <span>Cafe Illusions</span>
+  </h3>
+
+  <p>
+    From its first sketch to a thoughtfully curated dining experience —
+    discover the philosophy, people, and passion that shape every detail
+    at Cafe Illusions.
+  </p>
+
+  <a href="#about" class="cta-about-btn" onclick="goToAbout(event)">
+    View Our Story →
+  </a>
+
+</div>
+<!-- ===== HOME RESERVE PREVIEW ===== -->
+<div class="home-reserve-preview">
+
+  <!-- LEFT IMAGE -->
+  <div class="reserve-image">
+    <img src="chairview.jpg" alt="Cafe Seating View">
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="reserve-content">
+    <span class="reserve-eyebrow">RESERVATIONS</span>
+
+    <h3>
+      Reserve Your <span>Perfect Table</span>
+    </h3>
+
+    <p>
+      Whether it’s a quiet coffee, a family gathering,
+      or a special evening out — reserve your table in advance
+      and enjoy a thoughtfully curated dining experience at
+      Cafe Illusions.
+    </p>
+
+    <button class="reserve-btn" onclick="openPage('reservation')">
+      Reserve Your Table Now →
+    </button>
+  </div>
+
+</div>
+<!-- ===== HOME GALLERY PREVIEW ===== -->
+<div class="home-gallery-preview">
+
+  <!-- LEFT : TEXT -->
+  <div class="gallery-preview-text">
+    <span class="gallery-eyebrow">GALLERY</span>
+
+    <h3>
+      A Glimpse Into <br>
+      <span>Cafe Illusions</span>
+    </h3>
+
+    <p>
+      Step inside our world through moments captured across our café —
+      from thoughtfully plated dishes to warm interiors and memorable
+      experiences shared every day at Cafe Illusions.
+    </p>
+
+    <button class="gallery-btn" onclick="openPage('gallery')">
+      View Our Gallery →
+    </button>
+  </div>
+
+  <!-- RIGHT : IMAGES -->
+  <div class="gallery-preview-grid">
+    <img src="food1.jpg" alt="">
+    <img src="food2.jpg" alt="">
+    <img src="food3.jpg" alt="">
+    <img src="food4.jpg" alt="">
+  </div>
+
+</div>
+<!-- ===== HOME GOOGLE REVIEWS ===== -->
+<div class="home-reviews">
+
+  <!-- HEADER -->
+  <div class="reviews-header">
+    <span class="reviews-eyebrow">GOOGLE REVIEWS</span>
+
+    <h3>
+      Loved by Our <br>
+      <span>Guests</span>
+    </h3>
+
+    <div class="reviews-rating">
+      <span class="rating-score">4.1</span>
+      <span class="rating-stars">★★★★★</span>
+      <span class="rating-text">Based on Google Reviews</span>
+    </div>
+  </div>
+
+  <!-- REVIEWS GRID -->
+  <div class="reviews-grid">
+
+    <!-- Review 1 -->
+    <div class="review-card">
+      <div class="review-user">
+        <img src="customer2.png" alt="Shalini Pandey">
+        <div>
+          <strong>Shalini Pandey</strong>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        Peppy music, cool interiors, fast service, delicious food,
+        wide variety with indoor & outdoor seating in the heart
+        of the city. Perfect place to hang out.
+      </p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+      <div class="review-user">
+        <img src="customer1.png" alt="Avinash Mahule">
+        <div>
+          <strong>Avinash Mahule</strong>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        Loved the ambience and coffee. Bakery items are great.
+        Service is nice and it’s one of my favourite places
+        to spend quality time.
+      </p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+      <div class="review-user">
+        <img src="customer4.png" alt="Dushyant Deshmukh">
+        <div>
+          <strong>Dushyant Deshmukh</strong>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        Tried many dishes here and loved the vibes.
+        Huge variety in menu and pancakes were
+        my absolute favourite.
+      </p>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="review-card">
+      <div class="review-user">
+        <img src="customer3.png" alt="Vaishali Katkar">
+        <div>
+          <strong>Vaishali Katkar</strong>
+          <span class="review-stars">★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        One of the best cafes for breakfast and brunch.
+        Ambience is clean and service is polite.
+        Taste is consistently good.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="reviews-cta">
+    <a
+      href="https://share.google/eF6iGrAZz5xrpywRK"
+      target="_blank"
+      class="review-btn"
+    >
+      Add Your Review on Google →
+    </a>
+  </div>
+
+</div>
+<!-- ===== HOME CONTACT PREVIEW ===== -->
+<div class="home-contact-preview">
+
+  <!-- LEFT : TEXT -->
+  <div class="contact-preview-text">
+    <span class="contact-eyebrow">GET IN TOUCH</span>
+
+    <h3>
+      Let’s Connect With <br>
+      <span>Cafe Illusions</span>
+    </h3>
+
+    <p>
+      Have a question, planning a visit, or looking to collaborate?
+      We’d love to hear from you. Reach out to us and our team
+      will be happy to assist you with anything you need.
+    </p>
+
+    <button class="contact-btn" onclick="openPage('contact')">
+      Go to Contact Page →
+    </button>
+  </div>
+
+  <!-- RIGHT : IMAGE -->
+  <div class="contact-preview-image">
+    <img src="contact-cafe.jpeg" alt="Cafe Illusions Contact">
+  </div>
+
+</div>
+
+
+
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="page classmate-menu">
+
+  <!-- ========== CATEGORY CARDS ========== -->
+  <div id="menuCategories" class="menu-card-grid">
+
+    <div class="menu-card" onclick="openMenu('breakfast')">
+      <i class="fa-solid fa-egg"></i>
+      <h3>All Day Breakfast</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('tray')">
+      <i class="fa-solid fa-plate-wheat"></i>
+      <h3>Breakfast Tray</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('specialities')">
+      <i class="fa-solid fa-star"></i>
+      <h3>Our Specialities</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('croissants')">
+      <i class="fa-solid fa-bread-slice"></i>
+      <h3>Croissants</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('bagels')">
+      <i class="fa-solid fa-ring"></i>
+      <h3>Bagels</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('pancakes')">
+      <i class="fa-solid fa-layer-group"></i>
+      <h3>Pancakes</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('waffles')">
+      <i class="fa-solid fa-stroopwafel"></i>
+      <h3>Waffles</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('soups')">
+      <i class="fa-solid fa-fire"></i>
+      <h3>Soups</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('salads')">
+      <i class="fa-solid fa-leaf"></i>
+      <h3>Salads</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('startersVeg')">
+      <i class="fa-solid fa-seedling"></i>
+      <h3>Starters (Veg)</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('startersNonVeg')">
+      <i class="fa-solid fa-drumstick-bite"></i>
+      <h3>Starters (Non-Veg)</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('mainCourse')">
+      <i class="fa-solid fa-utensils"></i>
+      <h3>Main Course</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('breads')">
+      <i class="fa-solid fa-bread-slice"></i>
+      <h3>Breads</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('toast')">
+      <i class="fa-solid fa-cheese"></i>
+      <h3>Toast</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('burgers')">
+      <i class="fa-solid fa-burger"></i>
+      <h3>Burgers / Nachos / Fries</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('pasta')">
+      <i class="fa-solid fa-utensils"></i>
+      <h3>Pasta</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('pizza')">
+      <i class="fa-solid fa-pizza-slice"></i>
+      <h3>Pizza</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('rolls')">
+      <i class="fa-solid fa-hotdog"></i>
+      <h3>Rolls</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('riceNoodles')">
+      <i class="fa-solid fa-bowl-rice"></i>
+      <h3>Rice & Noodles</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('sizzlers')">
+      <i class="fa-solid fa-fire-flame-curved"></i>
+      <h3>Sizzlers</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('desserts')">
+      <i class="fa-solid fa-ice-cream"></i>
+      <h3>Sweet Treats</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('hotBrews')">
+      <i class="fa-solid fa-mug-hot"></i>
+      <h3>Hot Brews</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('coldBrews')">
+      <i class="fa-solid fa-snowflake"></i>
+      <h3>Cold Brews</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('coldBeverages')">
+      <i class="fa-solid fa-glass-water"></i>
+      <h3>Cold Beverages</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('teas')">
+      <i class="fa-solid fa-mug-saucer"></i>
+      <h3>Teas</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('shakes')">
+      <i class="fa-solid fa-blender"></i>
+      <h3>Shakes</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('fruitSizzlers')">
+      <i class="fa-solid fa-apple-whole"></i>
+      <h3>Fruiteazers</h3>
+    </div>
+
+    <div class="menu-card" onclick="openMenu('sides')">
+      <i class="fa-solid fa-bacon"></i>
+      <h3>Breakfast Siddeys</h3>
+    </div>
+
+  </div> <!-- ✅ menuCategories CLOSE -->
+
+  <!-- ========== DETAIL VIEW ========== -->
+  <div id="menuDetail" class="menu-detail">
+    <button class="back-btn" onclick="backToCategories()">← </button>
+    <h2 id="menuTitle"></h2>
+    <div id="menuItems"></div>
+  </div>
+
+</section>
+
+
+
+  
+
+<!-- ================= ABOUT PAGE ================= -->
+<section id="about" class="page about-premium">
+
+  <!-- ===== MAIN STORY ===== -->
+  <div class="about-story reveal-text">
+
+    <span class="about-badge">FROM SKETCH TO ASSEMBLY</span>
+
+    <p>
+      Illusions is the brainchild of a seasoned professional from IIM Kolkata,
+      with extensive experience in one of the Fortune 500 companies in the F&amp;B industry.
+    </p>
+
+    <p>
+      Founded in 2011, Illusions has blossomed into a vibrant brand poised for even
+      greater success. Thanks to your unwavering support, we’ve enjoyed consistent
+      growth and are now on the brink of expanding our brand further.
+    </p>
+
+    <p class="about-quote">
+      At Illusions, we aim to offer a world-class, curated dining experience
+      with exceptional food and beverages.
+    </p>
+
+    <p>
+      We have always prioritized high standards of hygiene, quality, and service,
+      and we remain deeply committed to continuous improvement in every aspect
+      of our operations.
+    </p>
+
+  </div>
+
+  <!-- ===== IMAGE FEATURE ===== -->
+  <div class="about-image-wrap">
+    <img src="chairsideview.jpg" alt="Cafe Illusions Interior View">
+  </div>
+
+  <!-- ===== BRAND PHILOSOPHY ===== -->
+  <div class="about-philosophy">
+
+    <div class="philosophy-card">
+      <h4>Crafted With Purpose</h4>
+      <p>
+        Every detail at Illusions is thoughtfully assembled — from flavours
+        and presentation to ambience and service.
+      </p>
+    </div>
+
+    <div class="philosophy-card">
+      <h4>Hospitality at Heart</h4>
+      <p>
+        We believe cafés are more than dining spaces — they are places where
+        stories are shared and connections are formed.
+      </p>
+    </div>
+
+    <div class="philosophy-card">
+      <h4>Driven by Excellence</h4>
+      <p>
+        Excellence is a habit at Illusions, reflected in hygiene standards,
+        operational discipline, and guest satisfaction.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ===== CLOSING STATEMENT ===== -->
+  <div class="about-closing reveal-text">
+
+    <p>
+      As we look toward the future, Illusions continues its journey of thoughtful
+      expansion — driven by innovation, strengthened by trust, and inspired by
+      every guest who chooses to be part of our story.
+    </p>
+
+  </div>
+
+</section>
+<!-- ================= ABOUT PAGE END ================= -->
+
+<!-- ================= FRANCHISE ================= -->
+<section id="franchise-home" class="franchise-home">
+
+  <h1 class="fr-title">Franchise</h1>
+
+  <!-- Animated ticks -->
+  <div class="fr-points">
+    <span class="point">✓ Low Investment</span>
+    <span class="point">✓ High Returns</span>
+    <span class="point">✓ Full Support</span>
+  </div>
+
+  <!-- Animated description -->
+  <p class="fr-desc">
+    A perfect place for friends and family, Illusions is one of the oldest and most sought-after casual dining restaurants known for superior service and delectable food.
+  </p>
+
+  <div class="fr-divider"></div>
+
+  <!-- Cards -->
+  <div class="fr-cards">
+    <div class="fr-card gold" onclick="openDetail('about')">About Us <span>→</span></div>
+    <div class="fr-card cream" onclick="openDetail('overview')">Overview <span>→</span></div>
+    <div class="fr-card blush" onclick="openDetail('opportunity')">Opportunity & Challenges <span>→</span></div>
+    <div class="fr-card sand" onclick="openDetail('advantage')">Illusions Advantage <span>→</span></div>
+    <div class="fr-card mocha" onclick="openDetail('apart')">What Sets Us Apart <span>→</span></div>
+    <div class="fr-card latte" onclick="openDetail('express')">Illusions Express Model <span>→</span></div>
+    <div class="fr-card caramel" onclick="openDetail('cafe')">Illusions Cafe Model <span>→</span></div>
+    <div class="fr-card olive" onclick="openDetail('why')">Why Choose Our Franchise <span>→</span></div>
+    <div class="fr-card beige" onclick="openDetail('support')">Franchise Support <span>→</span></div>
+    <div class="fr-card clay" onclick="openDetail('steps')">Steps for Setting Franchise <span>→</span></div>
+  </div>
+
+</section>
+<!-- Franchise Detail -->
+<section id="franchise-detail" style="display:none" class="franchise-detail">
+  <div id="franchise-content"></div>
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="page gallery-page">
+
+  <div class="gallery-wrapper">
+
+    <h2 class="gallery-title">Gallery</h2>
+    <p class="gallery-desc">
+      A glimpse into our thoughtfully crafted dishes, warm ambience, and
+      moments that define the Illusions experience.
+      <br>
+      Every plate tells a story of taste, passion, and perfection.
+    </p>
+
+    <div class="gallery-grid">
+
+      <!-- first view (4 images) -->
+      <img src="food1.jpg" class="gallery-img">
+      <img src="food2.jpg" class="gallery-img">
+      <img src="food3.jpg" class="gallery-img">
+      <img src="food4.jpg" class="gallery-img">
+
+      <!-- scroll images -->
+      <img src="food6.jpg" class="gallery-img">
+      <img src="food7.jpg" class="gallery-img">
+      <img src="food8.jpg" class="gallery-img">
+      <img src="food9.jpg" class="gallery-img">
+      <img src="food10.jpg" class="gallery-img">
+      <img src="food11.jpg" class="gallery-img">
+
+    </div>
+  </div>
+
+</section>
+
+<!-- FULLSCREEN LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img">
+</div>
+
+
+<!-- ================= RESERVATION ================= -->
+<section id="reservation" class="page reservation-section">
+
+
+  <div class="reservation-box">
+    <h2 class="reservation-title">Table Reservation</h2>
+    <p class="reservation-sub">
+      Reserve your table instantly via WhatsApp
+    </p>
+
+    <form id="reservationForm">
+
+      <input type="text" id="resName" placeholder="Full Name" required>
+
+      <input type="tel" id="resPhone" placeholder="Mobile Number" required>
+
+      <div class="reservation-row">
+        <input type="date" id="resDate" required>
+        <input type="time" id="resTime" required>
+      </div>
+
+      <!-- 🔥 SPECIAL REQUEST -->
+      <textarea id="resNote" rows="3"
+        placeholder="Any special request? (optional)"></textarea>
+
+      <button type="submit" class="reserve-btn">
+        Reserve via WhatsApp
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="page contact-section">
+
+  <!-- ===== TOP VIEW (TEXT + IMAGE ONLY) ===== -->
+  <div class="contact-hero">
+
+    <!-- LEFT TEXT -->
+    <div class="contact-hero-text">
+      <span class="contact-tag">GET IN TOUCH</span>
+
+      <h2 class="contact-title">
+        Reach Out to <br>
+        Cafe Illusions <br>
+        Today
+      </h2>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="contact-hero-image">
+      <img src="contact-cafe.jpeg" alt="Cafe Illusions">
+    </div>
+
+  </div>
+
+  <!-- ===== SCROLL DOWN → CONTACT CARDS ===== -->
+  <div class="contact-cards-wrapper">
+
+    <!-- PHONE -->
+    <a href="tel:07124550194" class="contact-card">
+      <i class="fa-solid fa-phone"></i>
+      <h4>Phone</h4>
+      <p>0712-4550194</p>
+    </a>
+
+    <!-- EMAIL -->
+    <a href="mailto:sarthakdokarmare877@gmail.com" class="contact-card">
+      <i class="fa-solid fa-envelope"></i>
+      <h4>Email</h4>
+      <p>sarthakdokarmare877@gmail.com</p>
+    </a>
+
+    <!-- MAP -->
+    <a href="https://maps.app.goo.gl/snX23tArn4hvSXh37?g_st=iw"
+       target="_blank"
+       class="contact-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4>Address</h4>
+      <p>Open in Google Maps</p>
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <!-- ABOUT -->
+    <div class="footer-about">
+      <h3>About</h3>
+
+      <p>
+        At <strong>Illusions</strong>, we aim to offer a world-class, curated
+        dining experience with exceptional food and beverages.<br>
+        We have always prioritized high standards of hygiene and quality,
+        and we remain committed to continuous improvement.
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+  <h3>Social Media</h3>
+
+  <div class="social-icons">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/illusionscafe?igsh=MWk4dmFmcXh0cTMwcg==" 
+       target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/1C3QqLqZuV/" 
+       target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- Google -->
+    <a href="https://share.google/oVtFB1UQiXBTUprbK" 
+       target="_blank" aria-label="Google">
+      <i class="fab fa-google"></i>
+    </a>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Cafe Illusions. All rights reserved.
+  </div>
+<div class="footer-credit">
+  Crafted & Designed by <span>D.Sarthak</span>
+</div>
+
+</footer>
+
+
+<script src="menudata.js"></script>
+<script src="script.js"></script>
+</body>
