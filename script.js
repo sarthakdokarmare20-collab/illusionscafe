@@ -845,6 +845,18 @@ function animateHero(){
 function toggleMenu(){
   document.querySelector(".header-nav").classList.toggle("active");
 }
+// close mobile menu after click
+document.querySelectorAll(".mobile-nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+
+    // sirf mobile ke liye
+    if (window.innerWidth <= 900) {
+      const nav = document.querySelector(".header-nav");
+      nav.classList.remove("active");
+    }
+
+  });
+});
 
 
 /* =================================================
