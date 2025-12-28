@@ -2390,4 +2390,20 @@ footer{
     text-align:center;
   }
 }
+/* ================= MOBILE FIX : ZOMATO BUTTON ================= */
+@media (max-width: 768px){
+
+  .zomato-btn{
+    padding:8px 16px;      /* chhota padding */
+    font-size:13px;        /* text chhota */
+    border-radius:30px;
+    gap:8px;
+    box-shadow:0 8px 18px rgba(226,27,34,.25);
+  }
+
+  .zomato-btn img{
+    width:18px;            /* logo chhota */
+  }
+}
+
 
