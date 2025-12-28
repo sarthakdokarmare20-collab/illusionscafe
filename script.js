@@ -49,6 +49,7 @@ function openMenu(key){
   document.getElementById("menuCategories").style.display="none";
   document.getElementById("menuDetail").style.display="block";
   document.getElementById("menuTitle").innerText = menuData[key].title;
+document.querySelector(".menu-hero").style.display = "none";
 
   const box = document.getElementById("menuItems");
   box.innerHTML = "";
@@ -72,7 +73,9 @@ function openMenu(key){
 
 function backToCategories(){
   resetMenuView();
+  document.querySelector(".menu-hero").style.display = "block";
 }
+
 
 /* =================================================
    ORDER NOW
