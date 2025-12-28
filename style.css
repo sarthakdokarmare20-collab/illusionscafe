@@ -2405,5 +2405,20 @@ footer{
     width:18px;            /* logo chhota */
   }
 }
+/* ================= MOBILE FIX : CONTACT CARDS ================= */
+@media (max-width: 768px){
+
+  .contact-cards-wrapper{
+    grid-template-columns:1fr;   /* ek card per row */
+    gap:24px;
+    padding:60px 20px;
+  }
+
+  .contact-card{
+    min-height:auto;
+    padding:40px 24px;
+  }
+}
+
 
 
