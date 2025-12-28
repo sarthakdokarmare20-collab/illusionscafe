@@ -2544,7 +2544,35 @@ footer{
   color:#b11212 !important;   /* premium deep red */
   font-weight:600;
   letter-spacing:0.4px;
+}.footer-contact{
+  margin-top:6px;
+  font-size:12px;
+  opacity:0.6;
 }
+
+.footer-contact a{
+  display:block;              /* 🔥 alag-alag line */
+  color:#7a7a7a;
+  text-decoration:none;
+  margin-top:3px;
+}
+
+.footer-contact a:hover{
+  text-decoration:underline;
+}
+
+.footer-contact i{
+  font-size:11px;
+  margin-right:6px;
+  color:#8a8a8a;
+}
+
+/* creator name red & bold */
+.footer-bottom strong{
+  color:#b11212;
+  font-weight:600;
+}
+
 
 /* faint contact info (unchanged) */
 .footer-contact{
@@ -2562,4 +2590,3 @@ footer{
   margin-right:4px;
   color:#8a8a8a;
 }
-
