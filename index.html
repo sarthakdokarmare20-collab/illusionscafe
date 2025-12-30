@@ -19,11 +19,17 @@
 
 <header class="main-header">
 
-  <!-- LEFT : LOGO -->
+ <div class="header-logo">
+  <div class="header-logo-circle">
+    <img src="logo.png" alt="Cafe Illusions Logo">
+  </div>
+
   <div class="header-logo-text">
-  <span class="logo-cafe">Cafe</span>
-  <span class="logo-illusions">Illusions</span>
+    <span class="logo-cafe">Cafe</span>
+    <span class="logo-illusions">Illusions</span>
+  </div>
 </div>
+
  <!-- Hamburger -->
   <div class="menu-toggle" onclick="toggleMenu()">
     <span></span>
@@ -35,13 +41,13 @@
   <div class="header-right-wrap">
 
     <nav class="header-nav">
-      <a onclick="openPage('home')" class="mobile-nav-link">Home</a>
-<a onclick="openPage('menu')" class="mobile-nav-link">Menu</a>
-<a onclick="openPage('about')" class="mobile-nav-link">About</a>
-<a onclick="openPage('franchise')" class="mobile-nav-link">Franchise</a>
-<a onclick="openPage('gallery')" class="mobile-nav-link">Gallery</a>
-<a onclick="openPage('reservation')" class="mobile-nav-link">Reservation</a>
-<a onclick="openPage('contact')" class="mobile-nav-link">Contact</a>
+      <a onclick="openPage('home')" class="mobile-nav-link">HOME</a>
+<a onclick="openPage('menu')" class="mobile-nav-link">MENU</a>
+<a onclick="openPage('about')" class="mobile-nav-link">ABOUT</a>
+<a onclick="openPage('franchise')" class="mobile-nav-link">FRANCHISE</a>
+<a onclick="openPage('gallery')" class="mobile-nav-link">GALLERY</a>
+<a onclick="openPage('reservation')" class="mobile-nav-link">RESERVATION</a>
+<a onclick="openPage('contact')" class="mobile-nav-link">CONTACT</a>
 
     </nav>
 
@@ -50,7 +56,6 @@
   target="_blank"
   class="zomato-btn"
 >
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Zomato">
   <span>Order Now</span>
 </a>
 
@@ -76,7 +81,9 @@
         Where Every Sip Feels Like <br>
         <span>An Illusion of Perfection</span>
       </h1>
-
+<p class="hero-tagline">
+  The Progressive Kitchen & Bistro
+</p>
       <p>
         Step into a thoughtfully designed café experience where
         handcrafted beverages, elegant interiors and comforting
@@ -505,30 +512,54 @@
 <section id="about" class="page about-premium">
 
   <!-- ===== MAIN STORY ===== -->
-  <div class="about-story reveal-text">
+  <section class="about-split">
 
-    <span class="about-badge">FROM SKETCH TO ASSEMBLY</span>
+  <!-- LEFT IMAGES -->
+  <div class="about-images left">
+    <img src="about1.jpeg" alt="About Illusions 1">
+    <img src="about2.jpeg" alt="About Illusions 2">
+  </div>
+
+  <!-- CENTER TEXT -->
+  <div class="about-text">
+
+    <h2 class="about-main-title">
+  <span class="title-black">From Sketch To</span>
+  <span class="title-red">Assembly</span>
+</h2>
+
 
     <p>
       Illusions is the brainchild of a seasoned professional from IIM Kolkata,
-      with extensive experience in one of the Fortune 500 companies in the F&amp;B industry.
+      with extensive experience in one of the Fortune 500 companies in the F&B industry.
     </p>
 
     <p>
-      Founded in 2012, the brand was envisioned to deliver thoughtfully curated, world-class 
-dining experiences that combine exceptional food and beverages with warm hospitality.
-    </p>
-
-    <p >
-      Our journey began with the launch of our first flagship store in 2012 in Dharampeth. Over the years, 
-      Cafe Illusions has grown into a vibrant and trusted brand, driven by loyal patrons and consistent positive growth.
+      Founded in 2012, the brand was envisioned to deliver thoughtfully curated,
+      world-class dining experiences that combine exceptional food and beverages
+      with warm hospitality.
     </p>
 
     <p>
-      We are now excited to expand our presence with a new location in the Sadar, marking an important milestone in our journey.
+      Our journey began with the launch of our first flagship store in 2012 in Dharampeth.
+      Over the years, Cafe Illusions has grown into a vibrant and trusted brand.
+    </p>
+
+    <p>
+      We are now excited to expand our presence with a new location in the Sadar,
+      marking an important milestone in our journey.
     </p>
 
   </div>
+
+  <!-- RIGHT IMAGES -->
+  <div class="about-images right">
+    <img src="about3.jpeg" alt="About Illusions 3">
+    <img src="about4.jpeg" alt="About Illusions 4">
+  </div>
+
+</section>
+
 
   <!-- ===== IMAGE FEATURE ===== -->
   <div class="about-image-wrap">
@@ -579,7 +610,10 @@ dining experiences that combine exceptional food and beverages with warm hospita
 <!-- ================= FRANCHISE ================= -->
 <section id="franchise-home" class="franchise-home">
 
-  <h1 class="fr-title">Franchise</h1>
+  <h1 class="fr-title">
+  Fran<span>chise</span>
+</h1>
+
 
   <!-- Animated ticks -->
   <div class="fr-points">
@@ -622,13 +656,15 @@ dining experiences that combine exceptional food and beverages with warm hospita
 
   <div class="gallery-wrapper">
 
-    <h2 class="gallery-title">Gallery</h2>
-    <p class="gallery-desc">
-      A glimpse into our thoughtfully crafted dishes, warm ambience, and
-      moments that define the Illusions experience.
-      <br>
-      Every plate tells a story of taste, passion, and perfection.
-    </p>
+    <h2 class="gallery-title">
+  Gal<span>lery</span>
+</h2>
+
+<p class="gallery-desc">
+  A glimpse into our thoughtfully crafted dishes, warm ambience, and moments that
+  define the Illusions experience. Every plate tells a story of taste, passion, and perfection.
+</p>
+
 
     <div class="gallery-grid">
 
@@ -645,6 +681,14 @@ dining experiences that combine exceptional food and beverages with warm hospita
       <img src="food9.jpg" class="gallery-img">
       <img src="food10.jpg" class="gallery-img">
       <img src="food11.jpg" class="gallery-img">
+      <!-- Existing gallery images ke niche add karo -->
+<img src="food12.jpeg" alt="Food 12">
+<img src="food13.jpeg" alt="Food 13">
+<img src="food14.jpeg" alt="Food 14">
+<img src="food15.jpeg" alt="Food 15">
+<img src="food16.jpeg" alt="Food 16">
+<img src="food17.jpeg" alt="Food 17">
+
 
     </div>
   </div>
@@ -663,14 +707,25 @@ dining experiences that combine exceptional food and beverages with warm hospita
 
 
   <div class="reservation-box">
-    <h2 class="reservation-title">Table Reservation</h2>
-    <p class="reservation-sub">
-      Reserve your table instantly via WhatsApp
-    </p>
+    <h2 class="reservation-title">
+  <span class="res-black">Table</span>
+  <span class="res-red">Reservations</span>
+</h2>
+
+<p class="reservation-desc">
+  Reserve your table instantly via WhatsApp
+</p>
 
     <form id="reservationForm">
 
       <input type="text" id="resName" placeholder="Full Name" required>
+<input
+  type="number"
+  id="resPeople"
+  placeholder="Number of People"
+  min="1"
+  required
+>
 
       <input type="tel" id="resPhone" placeholder="Mobile Number" required>
 
@@ -704,12 +759,16 @@ dining experiences that combine exceptional food and beverages with warm hospita
     <div class="contact-hero-text">
       <span class="contact-tag">GET IN TOUCH</span>
 
+      
       <h2 class="contact-title">
-        Reach Out to <br>
-        Cafe Illusions <br>
-        Today
-      </h2>
+  <span class="ct-black">Reach Out to</span><br>
+  <span class="ct-black">Cafe</span>
+  <span class="ct-red">Illusions</span><br>
+  <span class="ct-black">Today</span>
+</h2>
+
     </div>
+    
 
     <!-- RIGHT IMAGE -->
     <div class="contact-hero-image">
@@ -794,7 +853,7 @@ dining experiences that combine exceptional food and beverages with warm hospita
   </div>
 
  <div class="footer-bottom">
-  © 2025 Cafe Illusions • Designed by <strong>D. Sarthak</strong>
+  © 2025 Cafe Illusions • Designed by <strong>D. sarthak</strong>
 
   <div class="footer-contact">
     <a href="mailto:sarthakdokarmare20@gmail.com">
