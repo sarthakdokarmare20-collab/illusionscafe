@@ -2590,3 +2590,1116 @@ footer{
   margin-right:4px;
   color:#8a8a8a;
 }
+/* ================= MATCH ABOUT & FRANCHISE TEXT COLOR ================= */
+
+/* About page text colour (reference) */
+.about-story p,
+.about-closing p{
+  color:#7a1f1f;
+}
+
+/* Franchise main description */
+.fr-desc,
+.fr-about-line,
+.fr-overview-desc,
+.oc-line p,
+.adv-line p,
+.apart-line p,
+.why-line p,
+.model-line p,
+.step-line{
+  color:#7a1f1f;   /* 🔥 exact same tone as About */
+}
+/* ================= FRANCHISE COLOR HARMONY ================= */
+
+/* 1️⃣ Franchise tick points (✓ Low Investment etc.) */
+.fr-points .point{
+  color:#7a1f1f;                 /* same wine tone as About text */
+  font-weight:500;
+}
+
+/* tick symbol thoda highlight */
+.fr-points .point::before{
+  color:#b11212;
+}
+
+/* 2️⃣ Franchise cards – subtle related palette */
+.fr-card{
+  background:#f4e8da;            /* warm beige (about bg family) */
+  border:1px solid #e3c7a3;
+  color:#2e2e2e;
+}
+
+/* hover premium feel */
+.fr-card:hover{
+  background:#f1dfc8;
+  box-shadow:0 18px 40px rgba(122,31,31,0.15);
+}
+
+/* card arrow */
+.fr-card span{
+  color:#7a1f1f;
+  font-weight:600;
+}
+/* ================= FRANCHISE TITLE – HOME STYLE ================= */
+
+.fr-title{
+  font-family:'Playfair Display', serif;
+  font-size:52px;
+  font-weight:700;
+  color:#2e2e2e;          /* BLACK part */
+  letter-spacing:-0.4px;
+}
+
+/* Red highlight part (auto look like home page span) */
+.fr-title::after{
+  content:"";
+}
+
+/* If you want word split like Home page */
+.fr-title span{
+  color:#b11212;          /* RED part */
+}
+/* ================= HEADER LOGO : IMAGE + TEXT ================= */
+
+.header-logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* circle logo */
+.header-logo-circle{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:#fff;
+  border:2px solid #e6d6c2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  flex-shrink:0;
+}
+
+.header-logo-circle img{
+  width:80%;
+  height:80%;
+  object-fit:contain;
+}
+
+/* text */
+.header-logo-text{
+  font-family:'Playfair Display', serif;
+  font-size:26px;
+  font-weight:700;
+  letter-spacing:-0.3px;
+  line-height:1;
+}
+
+.logo-cafe{
+  color:#2e2e2e;      /* BLACK */
+}
+
+.logo-illusions{
+  color:#b11212;      /* RED */
+  margin-left:4px;
+}
+/* ================= GALLERY HEADING – BRAND MATCH ================= */
+
+/* Gallery title (same as Home / Franchise style) */
+.gallery-title{
+  font-family:'Playfair Display', serif;
+  font-size:52px;
+  font-weight:700;
+  color:#2e2e2e;          /* BLACK */
+  letter-spacing:-0.4px;
+  margin-bottom:14px;
+}
+
+.gallery-title span{
+  color:#b11212;          /* RED (Burgundy / Wine) */
+}
+
+/* Gallery subtext – same as About text */
+.gallery-desc{
+  max-width:760px;
+  margin:0 auto 60px;
+  font-size:16px;
+  line-height:1.8;
+  color:#7a1f1f;          /* Soft / Muted Burgundy */
+  text-align:center;
+}
+/* ================= LOGO CIRCLE – RED BORDER ================= */
+
+.header-logo-circle{
+  border:2px solid #b11212;   /* Illusions red (burgundy) */
+}
+/* ================= FORCE NAV UNDERLINE RED ================= */
+
+.header-nav a::after,
+.header-nav a:hover::after,
+.header-nav a.active::after{
+  background-color:#b11212 !important;  /* Illusions red */
+}
+/* ================= MENU DESCRIPTION – ABOUT TEXT COLOUR ================= */
+
+.menu-desc{
+  color:#7a1f1f !important;   /* About page text colour */
+}
+/* ================= RESERVATION TITLE – BRAND MATCH ================= */
+
+.reservation-title{
+  font-family:'Playfair Display', serif;
+  font-size:44px;
+  font-weight:700;
+  letter-spacing:-0.4px;
+  margin-bottom:10px;
+}
+
+/* Table – black */
+.res-black{
+  color:#2e2e2e;
+}
+
+/* Reservation – wine red */
+.res-red{
+  color:#b11212;   /* Illusions red */
+  margin-left:6px;
+}
+
+/* subtitle – About page text colour */
+.reservation-desc{
+  color:#7a1f1f;   /* muted wine / about text */
+  font-size:15px;
+  line-height:1.6;
+  margin-bottom:34px;
+}
+@media (max-width:768px){
+  .reservation-title{ font-size:34px; }
+}
+/* ================= CONTACT TITLE – BLACK + RED MIX ================= */
+
+.contact-title{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  font-weight:700;
+  line-height:1.15;
+  letter-spacing:-0.4px;
+}
+
+/* black text */
+.ct-black{
+  color:#2e2e2e;
+}
+
+/* Illusions red */
+.ct-red{
+  color:#b11212;
+}
+/* ================= MENU CARD TITLES – WINE RED ================= */
+
+.menu-card h4,
+.menu-card h3,
+.menu-card-title,
+.menu-card-grid h4,
+.menu-card-grid h3{
+  color:#7a1f1f !important;   /* Wine / About text colour */
+}
+.hero-tagline{
+  margin-top: 14px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.8px;
+  color: #7a1f1f;   /* wine red */
+  opacity: 0.85;
+}
+.hero-tagline::before,
+.hero-tagline::after{
+  content:"—";
+  margin:0 8px;
+  color:#b11212;
+}
+/* ================= FRANCHISE – MOBILE PADDING FIX ================= */
+
+@media (max-width: 768px){
+
+  .franchise-section,
+  .franchise-content,
+  .franchise-blocks,
+  .franchise-text,
+  .franchise-details{
+    padding-left:20px !important;
+    padding-right:20px !important;
+    box-sizing:border-box;
+  }
+
+}
+/* ================= FORCE RED THEME OVERRIDE ================= */
+
+/* ABOUT US heading */
+.fr-about h2{
+  color:#000;              /* ABOUT = BLACK */
+}
+.fr-about h2 span{
+  color:#b11212 !important; /* US = WINE RED */
+}
+
+/* OVERVIEW heading */
+.fr-overview h2{
+  color:#000;               /* OVER = BLACK */
+}
+.fr-overview h2 span{
+  color:#b11212 !important; /* VIEW = WINE RED */
+}
+
+/* ABOUT text (points) */
+.fr-about-line{
+  color:#7a1f1f;            /* about page text colour */
+}
+
+/* OVERVIEW description text */
+.fr-overview-desc{
+  color:#7a1f1f;            /* same about-text colour */
+}
+
+/* Advantage / Apart / Why headings */
+.fr-adv h2 span,
+.fr-apart h2 span,
+.fr-why h2 span,
+.fr-model h2 span,
+.fr-steps h2 span{
+  color:#b11212 !important; /* WINE RED */
+}
+
+/* Back button */
+.back-btn{
+  color:#b11212;
+  font-weight:500;
+}
+/* ================= GLOBAL ILLUSIONS RED OVERRIDE ================= */
+
+:root{
+  --illusions-red:#7A0F1B;
+}
+
+/* ALL RED / HIGHLIGHT TEXT */
+span,
+.highlight,
+.type-highlight{
+  color:var(--illusions-red) !important;
+}
+
+/* HEADER LOGO TEXT */
+.logo-illusions{
+  color:var(--illusions-red) !important;
+}
+
+/* NAV UNDERLINE */
+.header-nav a::after,
+.header-nav a:hover::after,
+.header-nav a.active::after{
+  background-color:var(--illusions-red) !important;
+}
+
+/* HOME HERO RED TEXT */
+.home-hero-text h1 span,
+.hero-tagline,
+.hero-tagline::before,
+.hero-tagline::after{
+  color:var(--illusions-red) !important;
+}
+
+/* ALL PRIMARY BUTTONS */
+.home-btn-primary,
+.home-btn-outline:hover,
+.reserve-btn,
+.review-btn,
+.gallery-btn,
+.contact-btn,
+.cta-about-btn{
+  background:var(--illusions-red) !important;
+  border-color:var(--illusions-red) !important;
+  color:#fff !important;
+}
+
+/* OUTLINE BUTTON TEXT */
+.home-btn-outline{
+  color:var(--illusions-red) !important;
+  border-color:var(--illusions-red) !important;
+}
+
+/* MENU / FRANCHISE / ABOUT TITLES */
+.menu-title span,
+.fr-title span,
+.fr-about h2 span,
+.fr-overview h2 span,
+.fr-adv h2 span,
+.fr-apart h2 span,
+.fr-why h2 span,
+.fr-model h2 span,
+.fr-steps h2 span,
+.gallery-title span{
+  color:var(--illusions-red) !important;
+}
+
+/* ABOUT + FRANCHISE BODY TEXT */
+.about-story p,
+.about-closing p,
+.fr-desc,
+.fr-about-line,
+.fr-overview-desc,
+.oc-line p,
+.adv-line p,
+.apart-line p,
+.why-line p,
+.model-line p,
+.step-line,
+.menu-desc,
+.gallery-desc{
+  color:var(--illusions-red) !important;
+}
+
+/* OVERVIEW CARDS TITLE */
+.ov-card h4{
+  color:#FFD400; /* yellow stays */
+}
+
+/* FOOTER CREATOR NAME */
+.footer-bottom strong{
+  color:var(--illusions-red) !important;
+}
+
+/* LOGO CIRCLE BORDER */
+.header-logo-circle{
+  border-color:var(--illusions-red) !important;
+}
+
+/* SOCIAL ICON HOVER */
+.social-icons a:hover{
+  background:var(--illusions-red) !important;
+  border-color:var(--illusions-red) !important;
+}
+
+/* BACK BUTTON */
+.back-btn{
+  color:var(--illusions-red) !important;
+}
+/* =================================================
+   GLOBAL ILLUSIONS WINE RED OVERRIDE (FINAL)
+   Paste this at END of style.css
+================================================= */
+
+:root{
+  --illusion-red:#7A0F1B;
+}
+
+/* ---------- ALL SPANS / HIGHLIGHTS ---------- */
+span,
+.type-highlight,
+.logo-illusions,
+.home-hero-text h1 span,
+.home-about-cta h3 span,
+.reserve-content h3 span,
+.gallery-preview-text h3 span,
+.reviews-header h3 span,
+.contact-preview-text h3 span,
+.fr-title span,
+.gallery-title span,
+.res-red,
+.menu-title span{
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- ORDER NOW / PRIMARY BUTTONS ---------- */
+.zomato-btn,
+.home-btn-primary,
+.reserve-btn,
+.review-btn,
+.gallery-btn,
+.contact-btn,
+.cta-about-btn{
+  background:var(--illusion-red) !important;
+  border-color:var(--illusion-red) !important;
+  box-shadow:0 14px 30px rgba(122,15,27,.35) !important;
+  color:#fff !important;
+}
+
+/* hover black remain */
+.zomato-btn:hover,
+.home-btn-primary:hover,
+.reserve-btn:hover,
+.review-btn:hover,
+.gallery-btn:hover,
+.contact-btn:hover,
+.cta-about-btn:hover{
+  background:#000 !important;
+}
+
+/* ---------- OUTLINE BUTTONS ---------- */
+.home-btn-outline{
+  color:var(--illusion-red) !important;
+  border-color:var(--illusion-red) !important;
+}
+.home-btn-outline:hover{
+  background:var(--illusion-red) !important;
+  color:#fff !important;
+}
+
+/* ---------- NAV ACTIVE / HOVER LINE ---------- */
+.header-nav a::after{
+  background:var(--illusion-red) !important;
+}
+
+/* ---------- EYEBROW / SMALL LABELS ---------- */
+.cta-eyebrow,
+.reserve-eyebrow,
+.gallery-eyebrow,
+.reviews-eyebrow,
+.contact-eyebrow,
+.menu-eyebrow,
+.about-badge,
+.contact-tag{
+  color:var(--illusion-red) !important;
+  border-color:var(--illusion-red) !important;
+}
+
+/* ---------- MENU CARDS TITLES ---------- */
+.menu-card h3{
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- FRANCHISE TITLES ---------- */
+.fr-about h2 span,
+.fr-overview h2 span,
+.fr-oc h2 span,
+.fr-adv h2 span,
+.fr-apart h2 span,
+.fr-why h2 span,
+.fr-model h2 span,
+.fr-steps h2 span,
+.fr-support h2 span{
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- DOTS / TICKS ---------- */
+.fr-about-line::before,
+.step-line::before{
+  background:var(--illusion-red) !important;
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- FOOTER TEXT ---------- */
+.footer-about h3,
+.footer-social h3{
+  color:#000 !important;
+  font-weight:700;
+}
+
+.footer-about p{
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+.social-icons a{
+  border-color:var(--illusion-red) !important;
+  color:#000 !important;
+}
+.social-icons a:hover{
+  background:var(--illusion-red) !important;
+  color:#fff !important;
+}
+
+/* ---------- RESERVATION TITLE ---------- */
+.reservation-title .res-red{
+  color:var(--illusion-red) !important;
+}
+
+/* ---------- REMOVE GOLD ANYWHERE ---------- */
+*[style*="#c28b50"],
+*[style*="#e21b22"],
+*[style*="#b11212"]{
+  color:var(--illusion-red) !important;
+  background-color:var(--illusion-red) !important;
+}
+/* ================= GALLERY PAGE – CLEAN GRID ================= */
+
+.gallery-page{
+  padding:60px 80px;
+  background:#fffaf2; /* same ivory background */
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:18px;
+}
+
+/* images */
+.gallery-grid img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:6px;
+  transition:transform .4s ease, box-shadow .4s ease;
+  cursor:pointer;
+}
+
+/* hover effect (subtle, premium) */
+.gallery-grid img:hover{
+  transform:scale(1.02);
+  box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1200px){
+  .gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media(max-width:768px){
+  .gallery-page{
+    padding:40px 20px;
+  }
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .gallery-grid img{
+    height:200px;
+  }
+}
+
+@media(max-width:480px){
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+}
+/* =================================================
+   CONTACT PAGE – IMAGE FINAL OVERRIDE (NO BORDER)
+   🔥 PASTE THIS AT END OF CSS FILE
+================================================= */
+
+/* 🔥 CONTACT HERO IMAGE CONTAINER RESET */
+.contact-hero-image,
+.contact-image,
+.contact-image-wrapper,
+.contact-img-box{
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* 🔥 IMAGE SIZE CONTROL (DESKTOP) */
+.contact-hero-image img,
+.contact-image img,
+.contact-img-box img{
+  width:100% !important;
+  max-width:480px !important;   /* 👈 image chhoti */
+  height:auto !important;
+  object-fit:cover !important;
+
+  /* ❌ BORDER REMOVE */
+  border:none !important;
+
+  /* ✅ CLEAN PREMIUM LOOK */
+  border-radius:14px !important;
+  box-shadow:0 14px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* 🔥 DESKTOP BALANCE */
+@media (min-width:992px){
+  .contact-hero{
+    grid-template-columns:1fr 1fr !important;
+    gap:60px !important;
+  }
+}
+
+/* 🔥 MOBILE – IMAGE AUR COMPACT */
+@media (max-width:768px){
+
+  .contact-hero{
+    display:block !important;
+    padding:60px 20px !important;
+  }
+
+  .contact-hero-image{
+    margin-top:30px !important;
+  }
+
+  .contact-hero-image img{
+    max-width:100% !important;
+  }
+}
+/* =================================================
+   CONTACT PAGE IMAGE – FINAL PERFECT SIZE
+   (NOT TOO SMALL, NOT TOO BIG)
+   PASTE AT END OF CSS
+================================================= */
+
+/* Wrapper clean */
+.contact-hero-image,
+.contact-image,
+.contact-img-box{
+  background:transparent !important;
+  padding:0 !important;
+  border:none !important;
+  box-shadow:none !important;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* 🔥 IMAGE SIZE – MID BALANCE */
+.contact-hero-image img,
+.contact-image img,
+.contact-img-box img{
+  width:100% !important;
+  max-width:620px !important;   /* 👈 YAHI MAIN CHANGE */
+  height:auto !important;
+
+  border:none !important;
+  border-radius:18px !important;
+  object-fit:cover !important;
+
+  box-shadow:0 18px 38px rgba(0,0,0,0.12) !important;
+}
+
+/* Desktop spacing */
+@media (min-width:992px){
+  .contact-hero{
+    grid-template-columns:1fr 1fr !important;
+    gap:70px !important;
+  }
+}
+
+/* Mobile view */
+@media (max-width:768px){
+  .contact-hero{
+    display:block !important;
+    padding:50px 20px !important;
+  }
+
+  .contact-hero-image{
+    margin-top:35px !important;
+  }
+
+  .contact-hero-image img{
+    max-width:100% !important;
+  }
+}
+
+/* =================================================
+   CONTACT PAGE – FINAL FIX (TEXT + IMAGE + SPACING)
+   🔥 PASTE THIS AT END OF CSS FILE
+================================================= */
+
+/* ---------- BRAND COLOR ---------- */
+:root{
+  --illusion-red:#7A0F1B;
+}
+
+/* =================================================
+   1️⃣ CONTACT HEADING – BLACK + ILLUSIONS RED
+================================================= */
+
+/* GET IN TOUCH */
+.contact-tag{
+  color:var(--illusion-red) !important;
+  font-weight:600;
+  letter-spacing:2.5px;
+}
+
+/* MAIN TITLE */
+.contact-title{
+  font-family:'Playfair Display', serif;
+  font-size:56px !important;     /* 🔥 thoda bada */
+  line-height:1.15;
+  font-weight:700;
+}
+
+/* BLACK PART */
+.contact-title{
+  color:#000 !important;
+}
+
+/* ONLY "Illusions" RED */
+.contact-title span,
+.ct-red{
+  color:var(--illusion-red) !important;
+}
+
+/* =================================================
+   2️⃣ CONTACT IMAGE – MEDIUM SIZE, NO BORDER
+================================================= */
+
+/* remove frame / background / border */
+.contact-hero-image{
+  background:transparent !important;
+  padding:0 !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+/* image size control */
+.contact-hero-image img{
+  width:100% !important;
+  max-width:620px !important;   /* 👈 medium size (balanced) */
+  height:auto !important;
+  object-fit:cover !important;
+  border:none !important;
+  border-radius:22px !important; /* smooth premium */
+  box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* =================================================
+   3️⃣ REMOVE EXTRA GAP ABOVE CONTACT CARDS
+================================================= */
+
+/* hero ke niche ka space kam */
+.contact-hero{
+  padding-bottom:40px !important;
+  min-height:auto !important;
+}
+
+/* cards ko upar lao */
+.contact-cards-wrapper{
+  margin-top:0 !important;
+  padding-top:40px !important;
+}
+
+/* =================================================
+   4️⃣ CONTACT CARDS – CLEAN LOOK
+================================================= */
+
+.contact-card{
+  background:#fff8ee !important;
+  border:1px solid #e6d6c2 !important;
+}
+
+/* =================================================
+   MOBILE SAFETY
+================================================= */
+@media (max-width:768px){
+
+  .contact-title{
+    font-size:40px !important;
+  }
+
+  .contact-hero-image img{
+    max-width:100% !important;
+  }
+}
+/* ===============================
+   CONTACT HEADING COLOR FIX
+   =============================== */
+
+.contact-title{
+  font-size:56px;
+  line-height:1.15;
+  font-weight:600;
+}
+
+/* BLACK TEXT */
+.contact-title .ct-black{
+  color:#000 !important;
+}
+
+/* BRAND / ILLUSIONS RED */
+.contact-title .ct-red{
+  color:#8b1d2c !important; /* wine red – Illusions brand */
+}
+/* ================= GALLERY FINAL OVERRIDE ================= */
+
+.gallery-grid{
+  display:grid !important;
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+  margin-top:40px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:16px;
+  background:#f6efe6;
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.gallery-grid img:hover{
+  transform:translateY(-6px) scale(1.02);
+  box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+/* ================= TABLET ================= */
+@media(max-width:1024px){
+  .gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:600px){
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+  }
+
+  .gallery-grid img{
+    height:200px;
+  }
+}
+/* ================================
+   ABOUT – TEXT CENTER, IMAGES SIDE
+================================ */
+
+.about-split{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 50px;
+  padding: 100px 8%;
+  background: #fbf4ea;
+  align-items: center;
+}
+
+.about-images{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-images img{
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* CENTER TEXT */
+.about-text{
+  text-align: center;
+  color: #7a0f1a; /* Illusions maroon */
+}
+
+.about-pill{
+  display: inline-block;
+  padding: 8px 22px;
+  border: 1.5px solid #7a0f1a;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.about-text p{
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+/* ================================
+   RESPONSIVE (MOBILE)
+================================ */
+
+@media (max-width: 1000px){
+  .about-split{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-images{
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .about-images img{
+    width: 50%;
+  }
+}
+/* ===============================
+   ABOUT PAGE – REMOVE EXTRA TOP SPACE (FINAL FIX)
+================================ */
+
+/* header ke baad jo default page padding aa rahi hai usko kill */
+#about.page{
+  padding-top:0 !important;
+}
+
+/* main about section */
+.about-premium{
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+/* image + text + images wala block */
+.about-split{
+  margin-top:0 !important;
+  padding-top:40px !important;   /* thoda premium breathing space */
+}
+
+/* left & right images ko bhi upar kheench do */
+.about-images{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+/* center text ko header ke paas lao */
+.about-text{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+/* pill (FROM SKETCH TO ASSEMBLY) ke upar ka gap remove */
+.about-pill{
+  margin-top:0 !important;
+}
+/* ===============================
+   CONTACT – IMAGE ALIGN WITH "GET IN TOUCH"
+================================ */
+
+/* main contact section grid fix */
+.contact-section{
+  align-items:flex-start !important; /* 🔥 top se align */
+}
+
+/* left text block */
+.contact-text{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+/* GET IN TOUCH label */
+.contact-text .contact-eyebrow{
+  margin-top:0 !important;
+}
+
+/* right image block */
+.contact-image{
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+/* actual image */
+.contact-image img{
+  display:block;
+  margin-top:0 !important;   /* 🔥 same line se start */
+}
+/* =================================================
+   CONTACT PAGE – PERFECT TOP ALIGN FIX (FINAL)
+   🔥 Paste at END of CSS – NO MISTAKE
+================================================= */
+
+/* 1️⃣ REMOVE EXTRA TOP SPACE AFTER HEADER */
+.contact-section{
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+/* 2️⃣ HERO GRID – NO TOP GAP */
+.contact-hero{
+  padding-top:40px !important;   /* minimal breathing space */
+  padding-bottom:90px;
+  min-height:auto !important;
+  align-items:flex-start !important; /* 🔥 top aligned */
+}
+
+/* 3️⃣ LEFT TEXT – ALIGN FROM TOP */
+.contact-hero-text{
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+/* 4️⃣ IMAGE CONTAINER – SAME START LINE AS TEXT */
+.contact-hero-image{
+  align-items:flex-start !important;
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+/* 5️⃣ IMAGE ITSELF – NO OFFSET */
+.contact-hero-image img{
+  margin-top:0 !important;
+  display:block;
+}
+/* =============================
+   ABOUT TITLE – RED BLACK FIX
+============================= */
+
+.about-title{
+  font-family:'Playfair Display', serif;
+  font-size:46px;
+  font-weight:700;
+  line-height:1.2;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* BLACK PART */
+.about-title .abt-black{
+  display:block;
+  color:#2e2e2e;   /* pure black */
+}
+
+/* RED PART */
+.about-title .abt-red{
+  display:block;
+  color:#b11212;   /* theme red */
+}
+/* ABOUT – From Sketch To Assembly (CORRECT COLORS) */
+.about-main-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* From Sketch To → BLACK */
+.about-main-title .title-black{
+  color: #000000;   /* BLACK */
+}
+
+/* Assembly → ORIGINAL RED (theme) */
+.about-main-title .title-red{
+  color: #b11212;   /* 🔥 SAME RED AS BEFORE */
+}
+/* ===== FINAL FORCE FIX : ABOUT TITLE COLORS ===== */
+
+/* pehle h2 ka inherited red tod do */
+.about-text .about-main-title{
+  color:#000 !important;          /* base BLACK */
+}
+
+/* From Sketch To → BLACK */
+.about-text .about-main-title .title-black{
+  color:#000 !important;
+}
+
+/* Assembly → RED (theme red) */
+.about-text .about-main-title .title-red{
+  color:#7a1f1f !important;
+}
+/* ===== TABLE RESERVATION TITLE COLOR FIX ===== */
+
+.reservation-title{
+  font-family:'Playfair Display', serif;
+  font-size:38px;
+  text-align:center;
+}
+
+/* Table → BLACK */
+.reservation-title .res-black{
+  color:#000000 !important;
+}
+
+/* Reservations → RED (theme) */
+.reservation-title .res-red{
+  color:#7a1f1f !important;
+}
